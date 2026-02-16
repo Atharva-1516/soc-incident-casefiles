@@ -37,7 +37,7 @@ Hash: SHA256=3f2c7a8b1a2b4e1f7a...
 
 The command was executed under a standard domain user account.
 
-og Analysis
+Analysis
 
 The process was launched from explorer.exe, indicating user-level interaction.
 
