@@ -143,6 +143,12 @@ Process creation logging (Sysmon Event ID 1) is critical for detecting script-ba
 
 Behavioral detection is more reliable than signature-based detection alone.
 
+Analyst Conclusion
+
+Based on the observed telemetry and behavioral indicators, this activity is highly suspicious and consistent with adversarial PowerShell execution techniques. Further decoding of the payload and correlation with additional endpoint telemetry is required to determine impact.
+
+The event should be treated as a potential security incident until proven otherwise.
+
 Detection rules must be tuned carefully to reduce administrative noise.
 
 Structured triage documentation improves repeatability and SOC efficiency.
