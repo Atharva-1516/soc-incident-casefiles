@@ -36,3 +36,15 @@ Hash: SHA256=3f2c7a8b1a2b4e1f7a...
 
 
 The command was executed under a standard domain user account.
+
+og Analysis
+
+The process was launched from explorer.exe, indicating user-level interaction.
+
+The -EncodedCommand parameter was used, which hides the actual PowerShell script.
+
+The -NoProfile flag suggests the attacker wanted to avoid loading user profile scripts that might trigger logging or security tools.
+
+No legitimate enterprise software in the environment is known to use encoded PowerShell commands.
+
+This strongly indicates obfuscated script execution.
