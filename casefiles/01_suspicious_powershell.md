@@ -110,3 +110,39 @@ Exclude known management servers
 Exclude known service accounts
 
 Alert only when executed by standard user accounts
+
+
+9. Remediation Steps
+
+Isolate the affected endpoint from the network.
+
+Decode the Base64 PowerShell command to determine intent.
+
+Review additional logs for:
+
+Network connections (Sysmon Event ID 3)
+
+File creation events
+
+Credential access attempts
+
+Reset credentials for the affected user account.
+
+Run a full endpoint antivirus and EDR scan.
+
+Monitor for similar PowerShell executions across the environment.
+
+If malicious intent is confirmed, escalate to incident response for deeper forensic analysis.
+
+
+10. Lessons Learned
+
+Encoded PowerShell commands are a high-fidelity behavioral indicator.
+
+Process creation logging (Sysmon Event ID 1) is critical for detecting script-based attacks.
+
+Behavioral detection is more reliable than signature-based detection alone.
+
+Detection rules must be tuned carefully to reduce administrative noise.
+
+Structured triage documentation improves repeatability and SOC efficiency.
